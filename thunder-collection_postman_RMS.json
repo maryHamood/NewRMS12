@@ -1,0 +1,421 @@
+{
+    "info": {
+        "_postman_id": "03939f2c-42ab-4d2d-b192-11811344dbdb",
+        "name": "RMS",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "users",
+            "item": [
+                {
+                    "name": "sign up",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/auth/signup?first_name&last_name&email&password",
+                            "query": [
+                                {
+                                    "key": "first_name",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "last_name",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "email",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "password",
+                                    "value": ""
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "auth",
+                                "signup"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "sign in",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/auth/signin?first_name&last_name&password",
+                            "query": [
+                                {
+                                    "key": "first_name",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "last_name",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "password",
+                                    "value": ""
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "auth",
+                                "signin"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "sign out",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/auth/signout?first_name&last_name&email&password",
+                            "query": [
+                                {
+                                    "key": "first_name",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "last_name",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "email",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "password",
+                                    "value": ""
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "auth",
+                                "signout"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "OTPcod",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/auth/verifyemailCode",
+                            "path": [
+                                "api",
+                                "auth",
+                                "verifyemailCode"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "resendCode",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/auth/resendCode",
+                            "path": [
+                                "api",
+                                "auth",
+                                "resendCode"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "password",
+            "item": [
+                {
+                    "name": "password_forget",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/password/forget",
+                            "path": [
+                                "api",
+                                "password",
+                                "forget"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "password_verify",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/password/verify",
+                            "path": [
+                                "api",
+                                "password",
+                                "verify"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "password_reset",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/password/reset",
+                            "path": [
+                                "api",
+                                "password",
+                                "reset"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "categories",
+            "item": [
+                {
+                    "name": "showCategories",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/categories",
+                            "path": [
+                                "api",
+                                "categories"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "categories_search",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/categories/search?q=س",
+                            "query": [
+                                {
+                                    "key": "q",
+                                    "value": "س"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "categories",
+                                "search"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "foods",
+            "item": [
+                {
+                    "name": "showfoods",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/foods",
+                            "path": [
+                                "api",
+                                "foods"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                },
+                {
+                    "name": "showfood",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/food/1",
+                            "path": [
+                                "api",
+                                "food",
+                                "1"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        },
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application/json"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "food_serach",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://127.0.0.1:8000/api/foods/search?q=س",
+                            "query": [
+                                {
+                                    "key": "q",
+                                    "value": "س"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "api",
+                                "foods",
+                                "search"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "127",
+                                "0",
+                                "0",
+                                "1"
+                            ],
+                            "port": "8000"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "serachall",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/searchall?q=c",
+                    "query": [
+                        {
+                            "key": "q",
+                            "value": "c"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api",
+                        "searchall"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                }
+            }
+        }
+    ]
+}
